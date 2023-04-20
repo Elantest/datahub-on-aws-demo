@@ -19,5 +19,5 @@ RUN pip install --upgrade pip wheel setuptools \
 
 # install datahub source/sink plugins
 RUN pip install \
-    "acryl-datahub[athena, bigquery, dbt, glue, hive, kafka, mongodb, mssql, mysql, postgres, redshift, redshift-usage, s3, snowflake, great-expectations, superset]" \
+    "acryl-datahub[kafka, mongodb, mssql, mysql, postgres, s3]" \
     && datahub check plugins
